@@ -8,7 +8,7 @@ int main()
     cin >> n;
     int i = 0;
     int ans = 0;
-    // Integer to Binary.
+    //Integer to Binary.
     // while (n != 0)
     // {
     //     int bit = n & 1;
