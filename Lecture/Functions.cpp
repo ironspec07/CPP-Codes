@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+int getNum(){
+    int n;
+    cin>>n;
+    return n;
+}
+
 bool checkEvenOdd(int n)
 {
     if (n % 2 == 0)
@@ -69,12 +75,10 @@ int main()
     {
     case 1:
     {
-        cout << "Enter a number:  " << endl;
-        int a;
-        cin >> a;
+        cout<<"Enter a number:  "<<endl;
+        int a = getNum();
         cout << "Enter power:  " << endl;
-        int b;
-        cin >> b;
+        int b = getNum();
 
         cout << a << " raised to the power " << b << " is: " << power(a, b) << endl;
         break;
@@ -82,8 +86,7 @@ int main()
     case 2:
     {
         cout << "Enter a number:  " << endl;
-        int n;
-        cin >> n;
+        int n = getNum();
         if (checkEvenOdd(n))  
         {
             cout<< "The given number is Even"<<endl;
@@ -97,27 +100,23 @@ int main()
     case 3:
     {
         cout << "Enter a number:  " << endl;
-        int n;
-        cin >> n;
+        int n = getNum();
         cout<<"Factorial of given number is: "<< factorial(n)<<endl;
         break;
     }
     case 4:
     {
         cout << "Enter n:  " << endl;
-        int n;
-        cin >> n;
+        int n = getNum();
         cout << "Enter r:  " << endl;
-        int r;
-        cin >> r;
+        int r = getNum();
         cout<<"nCr of given number is: "<< nCr(n,r)<<endl;
         break;
     }
     case 5:
     {
         cout << "Enter number:  " << endl;
-        int n;
-        cin >> n;
+        int n = getNum();
         if (isPrime(n))
         {
             cout<<"The given number is a prime number"<<endl;
