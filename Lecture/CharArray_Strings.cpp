@@ -29,7 +29,7 @@ bool checkPalindrome(char a[], int n)
             e--;
         }
     }
-    // return 1;
+    return 1;
 }
 
 void reverse(char name[], int n)
